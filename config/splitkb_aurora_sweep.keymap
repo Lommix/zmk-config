@@ -8,6 +8,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping-term-ms = <200>;
+    flavor = "hold-preferred";
+};
+
 / {
 
     combos {
@@ -41,17 +46,19 @@
             timeout-ms = <50>;
             key-positions = <2 10>;
             bindings = <&kp SQT>;
-		}
+		};
+
 		combo_ue{
             timeout-ms = <50>;
             key-positions = <2 6>;
             bindings = <&kp LBRC>;
-		}
+		};
+
 		combo_oe{
             timeout-ms = <50>;
             key-positions = <2 8>;
             bindings = <&kp SEMI>;
-		}
+		};
     };
 
     macros {
