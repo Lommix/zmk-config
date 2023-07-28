@@ -55,31 +55,32 @@
           >;
         };layer1 {
           bindings = <
-          &kp F20 &kp F20 &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP KC_ASTR RALT(KC_7) RALT(KC_NUBS) RALT(KC_0) KC_LPRN
-		  &kp LEFT_SHIFT &kp F20 &kp F20 &kp F20 &kp LEFT_GUI &kp LEFT &kp DOWN &kp UP &kp RIGHT RALT(KC_MINS)
-		  &kp LEFT_CONTROL &kp F20 &kp F20 &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC RALT(KC_8) &kp NON_US_BACKSLASH &kp NON_US_HASH LSFT(KC_NUBS) RALT(KC_9)
-		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE
+          &bt 0 &bt 1 &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP &kp STAR RALT(N7) RALT(NUBS) &kp RALT(N0) &kp LPAR
+		  &kp LEFT_SHIFT &kp F20 &kp F20 &kp F20 &kp LEFT_GUI &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp RALT(MINUS)
+		  &kp LEFT_CONTROL &kp F20 &kp F20 &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC RALT(N8) &kp NON_US_BACKSLASH &kp NON_US_HASH LSFT(NUBS) RALT(N9)
+		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE &kp F20
+          >;
           >;
         };layer2 {
           bindings = <
           &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp N1 &kp N2 &kp N3 &kp N0 &kp LEFT_BRACKET
-		  &kp LEFT_SHIFT &kp F20 &kp F20 &kp LC(A) &kp LEFT_GUI &kp N4 &kp N5 &kp N6 KC_RCBR &kp SEMICOLON
+		  &kp LEFT_SHIFT &kp F20 &kp F20 &kp LC(A) &kp LEFT_GUI &kp N4 &kp N5 &kp N6 &kp RBRC &kp SEMICOLON
 		  &kp LEFT_CONTROL &kp F6 &kp F7 &kp F8 &kp F9 &kp N7 &kp N8 &kp N9 &kp INTERNATIONAL_1 &kp SINGLE_QUOTE
 		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE
           >;
         };layer3 {
           bindings = <
-          RALT(KC_Q) KC_PIPE KC_AT KC_DLR KC_CIRC &to 4 &kp F20 &kp F20 &kp F20 &kp F20
-		  &kp GRAVE &kp EQUAL KC_QUES &kp RIGHT_BRACKET KC_PERC &kp LEFT_GUI &kp F20 &kp F20 &kp F20 &kp LEFT_SHIFT
-		  RALT(KC_RBRC) KC_HASH KC_AMPR &kp SLASH KC_EXLM &kp F20 &kp F20 &kp F20 &kp F20 &kp LEFT_CONTROL
+          &kp RALT(Q) &kp PIPE &kp LS(N2) &kp LS(N4) &kp LS(N6) &to 4 &kp F20 &kp F20 &kp F20 &kp F20
+		  &kp GRAVE &kp EQUAL &kp LS(SLASH) &kp RIGHT_BRACKET &kp PERCENT &kp LEFT_GUI &kp F20 &kp F20 &kp F20 &kp LEFT_SHIFT
+		  &kp RALT(RBRC) &kp HASH &kp LS(N7) &kp SLASH &kp LS(N1) &kp F20 &kp F20 &kp F20 &kp F20 &kp LEFT_CONTROL
 		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE
           >;
         };layer4 {
           bindings = <
           &kp TAB &kp Q &kp W &kp E &kp R &kp TAB &kp F1 &kp F2 &kp F3 &kp F20
 		  &kp LEFT_SHIFT &kp A &kp S &kp D &kp F &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F20
-		  &kp LEFT_CONTROL &kp Z &kp X &kp C &kp G &kp F20 &kp F20 &kp F20 &kp F20
-		  &kp F20 &mo 5 &kp SPACE &kp ENTER &to 0
+		  &kp LEFT_CONTROL &kp Z &kp X &kp C &kp G &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
+		  &mo 5 &kp SPACE &kp ENTER &to 0
           >;
         };layer5 {
           bindings = <
