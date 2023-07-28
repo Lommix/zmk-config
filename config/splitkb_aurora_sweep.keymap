@@ -22,21 +22,6 @@
             key-positions = <4 5>;
             bindings = <&kp ESC>;
         };
-
-        sa {
-            bindings = <&new_macro>;
-            key-positions = <3 6>;
-        };
-
-        ta {
-            bindings = <&thick_arrow>;
-            key-positions = <2 7>;
-        };
-
-        save {
-            bindings = <&vim_save>;
-            key-positions = <0 9>;
-        };
     };
 
     macros {
@@ -96,6 +81,15 @@
     &kp F1      &kp F2      &kp F3     &kp F4     &kp F5    &trans  &kp PG_UP  &kp K_VOL_UP  &kp K_MUTE  &trans
 &bt BT_CLR  &bt BT_NXT  &bt BT_PRV     &kp F6     &kp F7    &trans  &kp PG_DN  &kp K_VOL_DN      &trans  &trans
                                        &trans     &trans    &trans     &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
     };
