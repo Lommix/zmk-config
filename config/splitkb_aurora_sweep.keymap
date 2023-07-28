@@ -55,9 +55,9 @@
           >;
         };layer1 {
           bindings = <
-          &bt 0 &bt 1 &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP &kp STAR RALT(N7) RALT(NUBS) &kp RALT(N0) &kp LPAR
+          &bt 0 &bt 1 &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP &kp STAR &kp RALT(N7) &kp RALT(NUBS) &kp RALT(N0) &kp LPAR
 		  &kp LEFT_SHIFT &kp F20 &kp F20 &kp F20 &kp LEFT_GUI &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp RALT(MINUS)
-		  &kp LEFT_CONTROL &kp F20 &kp F20 &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC RALT(N8) &kp NON_US_BACKSLASH &kp NON_US_HASH LSFT(NUBS) RALT(N9)
+		  &kp LEFT_CONTROL &kp F20 &kp F20 &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &kp RALT(N8) &kp NON_US_BACKSLASH &kp NON_US_HASH &kp LSFT(NUBS) &kp RALT(N9)
 		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE &kp F20
           >;
           >;
