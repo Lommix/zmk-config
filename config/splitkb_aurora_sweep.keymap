@@ -51,7 +51,7 @@
 		combo_ue{
             timeout-ms = <50>;
             key-positions = <2 6>;
-            bindings = <&kp LBRC>;
+            bindings = <&kp LBKT>;
 		};
 
 		combo_oe{
