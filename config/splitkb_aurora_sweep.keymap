@@ -46,6 +46,7 @@
 
     keymap {
 		compatible = "zmk,keymap";
+
 		layer0 {
           bindings = <
           &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
@@ -57,9 +58,9 @@
 
 		layer1 {
           bindings = <
-          &bt 0 &bt 1 &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP &kp STAR &kp RALT(N7) &kp RALT(NUBS) &kp RALT(N0) &kp LPAR
-		  &kp LEFT_SHIFT &kp F20 &kp F20 &kp F20 &kp LEFT_GUI &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp RALT(MINUS)
-		  &kp LEFT_CONTROL &kp F20 &kp F20 &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &kp RALT(N8) &kp NON_US_BACKSLASH &kp NON_US_HASH &kp LSFT(NUBS) &kp RALT(N9)
+          &bt 0 &bt 1 &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP &kp LS(RBRC) &kp RA(N7) &kp RA(NUBS) &kp RA(N0) &kp LPAR
+		  &kp LEFT_SHIFT &kp F20 &kp F20 &kp F20 &kp LEFT_GUI &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp RA(MINUS)
+		  &kp LEFT_CONTROL &kp F20 &kp F20 &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &kp RA(N8) &kp NUBS &kp NUHS &kp LS(NUBS) &kp RA(N9)
 		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE
           >;
         };
