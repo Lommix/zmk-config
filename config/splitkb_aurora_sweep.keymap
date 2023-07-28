@@ -72,14 +72,14 @@
             >;
         };
 
-//        layer1 {
-//            bindings = <
-//           &bt 0    &bt 1  &kp C_VOLUME_DOWN            &kp C_MUTE       &kp C_VOLUME_UP    &kp LS(RBRC)     &kp RA(N7)  &kp RA(NUBS)    &kp RA(N0)       &kp LPAR
-//  &kp LEFT_SHIFT  &kp F20            &kp F20               &kp F20          &kp LEFT_GUI        &kp LEFT       &kp DOWN        &kp UP     &kp RIGHT  &kp RA(MINUS)
-//&kp LEFT_CONTROL  &kp F20            &kp F20  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC      &kp RA(N8)       &kp NUBS      &kp NUHS  &kp LS(NUBS)     &kp RA(N9)
-//                                                           &kp TAB             &kp SPACE       &kp ENTER  &kp BACKSPACE
-//            >;
-//        };
+        layer1 {
+            bindings = <
+           &bt 0    &bt 1  &kp C_VOLUME_DOWN            &kp C_MUTE       &kp C_VOLUME_UP    &kp LS(RBRC)     &kp RA(N7)  &kp RA(NUBS)    &kp RA(N0)       &kp LPAR
+  &kp LEFT_SHIFT  &kp F20            &kp F20               &kp F20          &kp LEFT_GUI        &kp LEFT       &kp DOWN        &kp UP     &kp RIGHT  &kp RA(MINUS)
+&kp LEFT_CONTROL  &kp F20            &kp F20  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC      &kp RA(N8)       &kp NUBS      &kp NUHS  &kp LS(NUBS)     &kp RA(N9)
+                                                           &kp TAB             &kp SPACE       &kp ENTER  &kp BACKSPACE
+            >;
+        };
 //
 //        layer2 {
 //            bindings = <
