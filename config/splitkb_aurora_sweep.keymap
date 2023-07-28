@@ -60,7 +60,6 @@
 		  &kp LEFT_CONTROL &kp F20 &kp F20 &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &kp RALT(N8) &kp NON_US_BACKSLASH &kp NON_US_HASH &kp LSFT(NUBS) &kp RALT(N9)
 		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE &kp F20
           >;
-          >;
         };layer2 {
           bindings = <
           &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp N1 &kp N2 &kp N3 &kp N0 &kp LEFT_BRACKET
