@@ -16,7 +16,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
         combo_esc {
             timeout-ms = <50>;
             key-positions = <4 5>;
@@ -46,51 +45,49 @@
     };
 
     keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
-                    &kp Q  &kp W  &kp E      &kp R           &kp T             &kp Y          &kp U  &kp I         &kp O                    &kp P
-         &mt LEFT_SHIFT A  &kp S  &kp D      &kp F  &mt LEFT_GUI G    &mt LEFT_GUI H          &kp J  &kp K         &kp L  &mt LEFT_SHIFT KP_MINUS
-&mt LEFT_CONTROL KP_EQUAL  &kp Z  &kp X      &kp C           &kp V             &kp B          &kp N  &kp M  &kp KP_COMMA  &mt LEFT_CONTROL KP_DOT
-                                         &lt 1 TAB     &lt 2 SPACE    &lt 3 KP_ENTER  &kp BACKSPACE
-            >;
-        };
-
-        left_layer {
-            bindings = <
-&kp NUM_1  &kp NUM_2        &kp NUM_3        &kp NUM_4   &kp NUM_5    &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0
-  &kp TAB  &kp LC(S)          &kp DQT        &kp PIPE2    &kp HASH    &kp MINUS    &kp EQL   &kp LBKT   &kp RBKT    &kp DEL
-  &kp ESC  &kp TILDE  &kp NON_US_BSLH  &kp NON_US_HASH  &kp TILDE2    &kp MINUS  &kp GRAVE   &kp LBKT   &kp RBKT    &kp DEL
-                                                 &mo 1    &kp LGUI     &kp RGUI      &mo 2
-            >;
-        };
-
-        right_layer {
-            bindings = <
-&kp BANG   &kp ATSN  &kp HASH  &kp DLLR  &kp PRCT     &kp CRRT      &kp AMPS  &kp KMLT  &kp LPRN   &kp RPRN
-&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN    &kp MINUS  &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-&kp LSFT   &kp KPLS  &kp LBKT  &kp RBKT  &kp BSLH    &kp UNDER      &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT
-                                  &mo 3  &kp LCTL      &kp SPC         &mo 2
-            >;
-        };
-
-        tri_layer {
-            bindings = <
- &kp NUM_1   &kp NUM_2   &kp NUM_3  &kp NUM_4  &kp NUM_5    &trans     &trans        &trans      &trans  &trans
-    &kp F1      &kp F2      &kp F3     &kp F4     &kp F5    &trans  &kp PG_UP  &kp K_VOL_UP  &kp K_MUTE  &trans
-&bt BT_CLR  &bt BT_NXT  &bt BT_PRV     &kp F6     &kp F7    &trans  &kp PG_DN  &kp K_VOL_DN      &trans  &trans
-                                       &trans     &trans    &trans     &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
-            >;
+		compatible = "zmk,keymap";
+		layer0 {
+          bindings = <
+          &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
+		  &mt LEFT_SHIFT A &kp S &kp D &kp F &mt LEFT_GUI G &mt LEFT_GUI H &kp J &kp K &kp L &mt LEFT_SHIFT MINUS
+		  &mt LEFT_CONTROL KP_EQUAL &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &mt LEFT_CONTROL DOT
+		  &lt 1 TAB &lt 2 SPACE &lt 3 ENTER &kp BACKSPACE
+          >;
+        };layer1 {
+          bindings = <
+          &kp F20 &kp F20 &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP KC_ASTR RALT(KC_7) RALT(KC_NUBS) RALT(KC_0) KC_LPRN
+		  &kp LEFT_SHIFT &kp F20 &kp F20 &kp F20 &kp LEFT_GUI &kp LEFT &kp DOWN &kp UP &kp RIGHT RALT(KC_MINS)
+		  &kp LEFT_CONTROL &kp F20 &kp F20 &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC RALT(KC_8) &kp NON_US_BACKSLASH &kp NON_US_HASH LSFT(KC_NUBS) RALT(KC_9)
+		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE
+          >;
+        };layer2 {
+          bindings = <
+          &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp N1 &kp N2 &kp N3 &kp N0 &kp LEFT_BRACKET
+		  &kp LEFT_SHIFT &kp F20 &kp F20 &kp LC(A) &kp LEFT_GUI &kp N4 &kp N5 &kp N6 KC_RCBR &kp SEMICOLON
+		  &kp LEFT_CONTROL &kp F6 &kp F7 &kp F8 &kp F9 &kp N7 &kp N8 &kp N9 &kp INTERNATIONAL_1 &kp SINGLE_QUOTE
+		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE
+          >;
+        };layer3 {
+          bindings = <
+          RALT(KC_Q) KC_PIPE KC_AT KC_DLR KC_CIRC &to 4 &kp F20 &kp F20 &kp F20 &kp F20
+		  &kp GRAVE &kp EQUAL KC_QUES &kp RIGHT_BRACKET KC_PERC &kp LEFT_GUI &kp F20 &kp F20 &kp F20 &kp LEFT_SHIFT
+		  RALT(KC_RBRC) KC_HASH KC_AMPR &kp SLASH KC_EXLM &kp F20 &kp F20 &kp F20 &kp F20 &kp LEFT_CONTROL
+		  &kp TAB &kp SPACE &kp ENTER &kp BACKSPACE
+          >;
+        };layer4 {
+          bindings = <
+          &kp TAB &kp Q &kp W &kp E &kp R &kp TAB &kp F1 &kp F2 &kp F3 &kp F20
+		  &kp LEFT_SHIFT &kp A &kp S &kp D &kp F &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F20
+		  &kp LEFT_CONTROL &kp Z &kp X &kp C &kp G &kp F20 &kp F20 &kp F20 &kp F20
+		  &kp F20 &mo 5 &kp SPACE &kp ENTER &to 0
+          >;
+        };layer5 {
+          bindings = <
+          &kp N1 &kp N2 &kp W &kp N3 &kp N4 &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
+		  &kp LEFT_SHIFT &kp A &kp S &kp D &kp N5 &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
+		  &kp LEFT_CONTROL &kp B &kp N &kp M &kp N6 &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
+		  &kp F20 &kp SPACE &kp F20 &kp F20
+          >;
         };
     };
 };
