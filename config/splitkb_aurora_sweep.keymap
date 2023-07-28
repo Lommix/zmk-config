@@ -74,47 +74,47 @@
 
         layer1 {
             bindings = <
-           &bt 0    &bt 1  &kp C_VOLUME_DOWN            &kp C_MUTE       &kp C_VOLUME_UP    &kp LS(RBRC)     &kp RA(N7)  &kp RA(NUBS)    &kp RA(N0)       &kp LPAR
-  &kp LEFT_SHIFT  &kp F20            &kp F20               &kp F20          &kp LEFT_GUI        &kp LEFT       &kp DOWN        &kp UP     &kp RIGHT  &kp RA(MINUS)
+           &bt BT_SEL 0		&bt BT_SEL 1  &kp C_VOLUME_DOWN            &kp C_MUTE       &kp C_VOLUME_UP    &kp LS(RBRC)     &kp RA(N7)  &kp RA(NUBS)    &kp RA(N0)       &kp LPAR
+  &kp LEFT_SHIFT  &bt BT_CLR            &kp F20               &kp F20          &kp LEFT_GUI        &kp LEFT       &kp DOWN        &kp UP     &kp RIGHT  &kp RA(MINUS)
 &kp LEFT_CONTROL  &kp F20            &kp F20  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC      &kp RA(N8)       &kp NUBS      &kp NUHS  &kp LS(NUBS)     &kp RA(N9)
                                                            &kp TAB             &kp SPACE       &kp ENTER  &kp BACKSPACE
             >;
         };
-//
-//        layer2 {
-//            bindings = <
-//          &kp F1   &kp F2   &kp F3     &kp F4        &kp F5       &kp N1         &kp N2  &kp N3               &kp N0       &kp LBKT
-//  &kp LEFT_SHIFT  &kp F20  &kp F20  &kp LC(A)  &kp LEFT_GUI       &kp N4         &kp N5  &kp N6             &kp RBRC  &kp SEMICOLON
-//&kp LEFT_CONTROL   &kp F6   &kp F7     &kp F8        &kp F9       &kp N7         &kp N8  &kp N9  &kp INTERNATIONAL_1        &kp SQT
-//                                      &kp TAB     &kp SPACE    &kp ENTER  &kp BACKSPACE
-//            >;
-//        };
-//
-//        layer3 {
-//            bindings = <
-//   &kp RA(Q)   &kp PIPE     &kp LS(N2)  &kp LS(N4)  &kp LS(N6)           &to 4        &kp F20  &kp F20  &kp F20           &kp F20
-//   &kp GRAVE  &kp EQUAL  &kp LS(SLASH)    &kp RBKT  &kp LS(N5)    &kp LEFT_GUI        &kp F20  &kp F20  &kp F20    &kp LEFT_SHIFT
-//&kp RA(RBRC)   &kp HASH     &kp LS(N7)   &kp SLASH  &kp LS(N1)         &kp F20        &kp F20  &kp F20  &kp F20  &kp LEFT_CONTROL
-//                                           &kp TAB   &kp SPACE       &kp ENTER  &kp BACKSPACE
-//            >;
-//        };
-//
-//        layer4 {
-//            bindings = <
-//         &kp TAB  &kp Q  &kp W  &kp E      &kp R      &kp TAB    &kp F1   &kp F2     &kp F3  &kp F20
-//  &kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F     &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &kp F20
-//&kp LEFT_CONTROL  &kp Z  &kp X  &kp C      &kp G      &kp F20   &kp F20  &kp F20    &kp F20  &kp F20
-//                                &mo 5  &kp SPACE    &kp ENTER     &to 0
-//            >;
-//        };
-//
-//        layer5 {
-//            bindings = <
-//          &kp N1  &kp N2  &kp W   &kp N3     &kp N4    &kp F20  &kp F20  &kp F20  &kp F20  &kp F20
-//  &kp LEFT_SHIFT   &kp A  &kp S    &kp D     &kp N5    &kp F20  &kp F20  &kp F20  &kp F20  &kp F20
-//&kp LEFT_CONTROL   &kp B  &kp N    &kp M     &kp N6    &kp F20  &kp F20  &kp F20  &kp F20  &kp F20
-//                                 &kp F20  &kp SPACE    &kp F20  &kp F20
-//            >;
-//        };
+
+        layer2 {
+            bindings = <
+          &kp F1   &kp F2   &kp F3     &kp F4        &kp F5       &kp N1         &kp N2  &kp N3               &kp N0       &kp LBKT
+  &kp LEFT_SHIFT  &kp F20  &kp F20  &kp LC(A)  &kp LEFT_GUI       &kp N4         &kp N5  &kp N6             &kp RBRC  &kp SEMICOLON
+&kp LEFT_CONTROL   &kp F6   &kp F7     &kp F8        &kp F9       &kp N7         &kp N8  &kp N9  &kp INTERNATIONAL_1        &kp SQT
+                                      &kp TAB     &kp SPACE    &kp ENTER  &kp BACKSPACE
+            >;
+        };
+
+        layer3 {
+            bindings = <
+   &kp RA(Q)   &kp PIPE     &kp LS(N2)  &kp LS(N4)  &kp LS(N6)           &to 4        &kp F20  &kp F20  &kp F20           &kp F20
+   &kp GRAVE  &kp EQUAL  &kp LS(SLASH)    &kp RBKT  &kp LS(N5)    &kp LEFT_GUI        &kp F20  &kp F20  &kp F20    &kp LEFT_SHIFT
+&kp RA(RBRC)   &kp HASH     &kp LS(N7)   &kp SLASH  &kp LS(N1)         &kp F20        &kp F20  &kp F20  &kp F20  &kp LEFT_CONTROL
+                                           &kp TAB   &kp SPACE       &kp ENTER  &kp BACKSPACE
+            >;
+        };
+
+        layer4 {
+            bindings = <
+         &kp TAB  &kp Q  &kp W  &kp E      &kp R      &kp TAB    &kp F1   &kp F2     &kp F3  &kp F20
+  &kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F     &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &kp F20
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C      &kp G      &kp F20   &kp F20  &kp F20    &kp F20  &kp F20
+                                &mo 5  &kp SPACE    &kp ENTER     &to 0
+            >;
+        };
+
+        layer5 {
+            bindings = <
+          &kp N1  &kp N2  &kp W   &kp N3     &kp N4    &kp F20  &kp F20  &kp F20  &kp F20  &kp F20
+  &kp LEFT_SHIFT   &kp A  &kp S    &kp D     &kp N5    &kp F20  &kp F20  &kp F20  &kp F20  &kp F20
+&kp LEFT_CONTROL   &kp B  &kp N    &kp M     &kp N6    &kp F20  &kp F20  &kp F20  &kp F20  &kp F20
+                                 &kp F20  &kp SPACE    &kp F20  &kp F20
+            >;
+        };
     };
 };
