@@ -83,22 +83,22 @@
           >;
         };
 
-	//	layer4 {
-    //      bindings = <
-	//	  &kp TAB &kp Q &kp W &kp E &kp R &kp TAB &kp F1 &kp F2 &kp F3 &kp F20
-	//	  &kp LEFT_SHIFT &kp A &kp S &kp D &kp F &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F20
-	//	  &kp LEFT_CONTROL &kp Z &kp X &kp C &kp G &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
-	//	  &mo 5 &kp SPACE &kp ENTER &to 0
-    //      >;
-    //    };
+		layer4 {
+          bindings = <
+		  &kp TAB &kp Q &kp W &kp E &kp R &kp TAB &kp F1 &kp F2 &kp F3 &kp F20
+		  &kp LEFT_SHIFT &kp A &kp S &kp D &kp F &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F20
+		  &kp LEFT_CONTROL &kp Z &kp X &kp C &kp G &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
+		  &mo 5 &kp SPACE &kp ENTER &to 0
+          >;
+        };
 
-	//	layer5 {
-    //      bindings = <
-    //      &kp N1 &kp N2 &kp W &kp N3 &kp N4 &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
-	//	  &kp LEFT_SHIFT &kp A &kp S &kp D &kp N5 &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
-	//	  &kp LEFT_CONTROL &kp B &kp N &kp M &kp N6 &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
-	//	  &kp F20 &kp SPACE &kp F20 &kp F20
-    //      >;
-    //    };
+		layer5 {
+          bindings = <
+          &kp N1 &kp N2 &kp W &kp N3 &kp N4 &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
+		  &kp LEFT_SHIFT &kp A &kp S &kp D &kp N5 &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
+		  &kp LEFT_CONTROL &kp B &kp N &kp M &kp N6 &kp F20 &kp F20 &kp F20 &kp F20 &kp F20
+		  &kp F20 &kp SPACE &kp F20 &kp F20
+          >;
+        };
     };
 };
