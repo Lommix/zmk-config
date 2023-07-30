@@ -116,8 +116,8 @@
         layer3 {
             bindings = <
    &kp RA(Q)   &kp PIPE     &kp LS(N2)  &kp LS(N4)  &kp LS(N6)           &to 4        &kp F20  &kp F20  &kp F20           &kp F20
-   &kp GRAVE  &kp EQUAL  &kp LS(SLASH)    &kp RBKT  &kp LS(N5)    &kp LEFT_GUI        &kp F20  &kp F20  &kp F20    &kp LEFT_SHIFT
-&kp RA(RBRC)   &kp HASH     &kp LS(N7)   &kp SLASH  &kp LS(N1)         &kp F20        &kp F20  &kp F20  &kp F20  &kp LEFT_CONTROL
+   &kp GRAVE  &kp EQUAL  &kp LS(SLASH)    &kp RBKT  &kp LS(N5)    &kp LEFT_GUI        &kp RA(E)  &kp F20  &kp F20    &kp LEFT_SHIFT
+&kp RA(RBKT)   &kp HASH     &kp LS(N7)   &kp SLASH  &kp LS(N1)         &kp F20        &kp F20  &kp F20  &kp F20  &kp LEFT_CONTROL
                                            &kp TAB   &kp SPACE       &kp ENTER  &kp BACKSPACE
             >;
         };
